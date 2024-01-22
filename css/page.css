@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+body {
+  height: 100vh;
+}
+
+.button button, .links a {
+  color: black;
+  border: 1px solid black;
+  padding: 0.5em 0;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  background-color: #C9D1DE;
+  transition: 0.5s ease-in-out;
+}
+
+.burger {
+  position: absolute;
+}
+
+.content {
+  border: 1px solid black;
+  width: 100%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input:checked ~ .sidebar {
+  transform: translateX(-100%);
+}
+
+.image img {
+  width: 40%;
+}
+
+.links {
+  height: 50%;
+}
+.links a {
+  width: 80%;
+  text-decoration: none;
+}
+.links a:hover {
+  color: red;
+}
+
+.button button {
+  width: 60%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #7c1001;
+}
+
+.content {
+  border: 1px solid black;
+  width: 100%;
+}
+.content h1 {
+  text-align: center;
+  margin-top: 2vh;
+}
+.content button {
+  padding: 1vw;
+  width: 100px;
+  margin: 5vh 180vh;
+  cursor: pointer;
+  color: white;
+  background: #7c1001;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.table-style {
+  border-collapse: collapse;
+  min-width: 900px;
+  width: 100%;
+  margin: 50px auto;
+  cursor: pointer;
+  border: none;
+}
+.table-style thead tr {
+  color: white;
+  background-color: #7c1001;
+  font-weight: bolder;
+  font-size: 18px;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.table-style th, .table-style td {
+  padding: 10px 5px;
+}
+.table-style tbody, .table-style th, .table-style tr, .table-style td {
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+  font-weight: 500;
+}
+.table-style thead td {
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+/*# sourceMappingURL=page.css.map */

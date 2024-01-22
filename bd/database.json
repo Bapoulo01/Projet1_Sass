@@ -1,0 +1,23 @@
+{
+    "classes": [
+      {
+        "libellé": "L1 Developpement Web",
+        "filière": "Dev Web",
+        "niveau": "L1"
+      },
+      {
+        "libellé": "L2 Developpement Web",
+        "filière": "Dev Web",
+        "niveau": "L2"
+      }
+    ],
+    "etudiants": [
+      { "prénom": "Eleve", "nom": "1", "ID": "Eleve01" },
+      { "prénom": "Eleve", "nom": "2", "ID": "Eleve02" }
+    ],
+    "coachs": [
+      { "nom": "Coach 1", "specialite": "Spécialité 1", "grade": "Grade 1" },
+      { "nom": "Coach 2", "specialite": "Spécialité 2", "grade": "Grade 2" }
+    ]
+  }
+  

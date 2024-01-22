@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+body {
+  height: 100vh;
+}
+
+.button button, .links a {
+  color: black;
+  border: 1px solid black;
+  padding: 0.5em 0;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  background-color: #C9D1DE;
+  transition: 0.5s ease-in-out;
+}
+
+.burger {
+  position: absolute;
+}
+
+.content {
+  border: 1px solid black;
+  width: 100%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input:checked ~ .sidebar {
+  transform: translateX(-100%);
+}
+
+.image img {
+  width: 40%;
+}
+
+.links {
+  height: 50%;
+}
+.links a {
+  width: 80%;
+  text-decoration: none;
+}
+.links a:hover {
+  color: red;
+}
+
+.button button {
+  width: 60%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #7c1001;
+}
+
+.card {
+  width: 20%;
+  height: 50%;
+  border-radius: 12px;
+}
+.card .chiffre {
+  color: white;
+  font-weight: bold;
+}
+.card .text {
+  font-size: 1.5rem;
+}
+
+.orange {
+  background-color: #F39C12;
+}
+
+.bleu {
+  background-color: #2960B9;
+}
+
+.violet {
+  background-color: #BE44AD;
+}
+
+.vert {
+  background-color: #16A065;
+}
+
+.box {
+  height: 50%;
+}
+
+.titles h1 {
+  margin-bottom: 1.5em;
+}
+.titles .entete {
+  color: red;
+}/*# sourceMappingURL=page1.css.map */

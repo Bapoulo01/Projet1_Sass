@@ -1,0 +1,119 @@
+@import 'base';
+
+$border : 1px solid black;
+
+%bouton
+{
+    color: black;
+    border: $border;
+    padding: 0.5em 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.sidebar
+{
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    background-color: #C9D1DE;
+    transition: 0.5s ease-in-out;
+}
+.burger
+{
+    position: absolute;
+}
+.content
+{
+    border: $border;
+    width: 100%;
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+input:checked ~ .sidebar
+{
+    transform: translateX(-100%);
+}
+
+.image
+{
+    img { width: 40%; }
+}
+
+.links
+{
+    height: 50%;
+    a
+    {
+        width: 80%;
+        @extend %bouton;
+        text-decoration: none;
+        &:hover { color: red; }
+    }
+}
+
+.button
+{
+    button
+    {
+        width: 60%;
+        border: none;
+        color: white;
+        @extend %bouton;
+        cursor: pointer;
+        background-color: #7c1001;
+    }
+}
+
+.card
+{
+    width: 20%;
+    height: 50%;
+    border-radius: 12px;
+    .chiffre
+    {
+        color: white;
+        font-weight: bold;
+    }
+    .text
+    {
+        font-size: 1.5rem;
+    }
+}
+
+.orange
+{
+    background-color: #F39C12;
+}
+.bleu
+{
+    background-color: #2960B9;
+}
+.violet
+{
+    background-color: #BE44AD;
+}
+.vert
+{
+    background-color: #16A065;
+}
+
+.box
+{
+    height: 50%;
+}
+
+.titles
+{
+    h1
+    {
+        margin-bottom: 1.5em;
+    }
+    .entete
+    {
+        color: red;
+    }
+}

@@ -1,0 +1,129 @@
+@import 'base';
+
+$border : 1px solid black;
+%bouton
+{
+    color: black;
+    border: $border;
+    padding: 0.5em 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.sidebar
+{
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    background-color: #C9D1DE;
+    transition: 0.5s ease-in-out;
+}
+.burger
+{
+    position: absolute;
+}
+.content
+{
+    // border: $border;
+    width: 100%;
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+input:checked ~ .sidebar
+{
+    transform: translateX(-100%);
+}
+
+.image
+{
+    img { width: 40%; }
+}
+
+.links
+{
+    height: 50%;
+    a
+    {
+        width: 80%;
+        @extend %bouton;
+        text-decoration: none;
+        &:hover { color: red; }
+    }
+}
+
+.button
+{
+    button
+    {
+        width: 60%;
+        border: none;
+        color: white;
+        @extend %bouton;
+        cursor: pointer;
+        background-color: #7c1001;
+    }
+}
+.content
+{
+    // border: $border;
+    width: 80%;
+    margin-left: 10%;
+    h1{
+        text-align: center;
+        margin-top: 2vh;
+    }
+    button{
+      padding: 1vw;
+      width: 100px;
+      margin: 5vh 0vh 5vh 100vh;
+      cursor: pointer;
+      color: white;
+      background: #7c1001;
+      border: none;
+      font-size: 17px;
+      border-radius: 5px;
+    }
+}
+.table-style{
+    border-collapse: collapse;
+    min-width:900px;
+    width: 100%;
+    margin: 0 10px ;
+    cursor: pointer;
+    border: none;
+
+    thead tr{
+        color: white;
+        background-color: #7c1001;
+        font-weight: bolder;
+        font-size: 18px;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+    }
+    th, td{padding: 10px 5px;}
+
+    tbody,th,tr,td{
+        text-align: center;
+        border-bottom: 1px solid gainsboro;
+        font-weight: 500;
+    }
+    thead td{
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+    }
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+
+
+ 
+
+

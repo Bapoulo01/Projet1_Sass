@@ -1,0 +1,43 @@
+@import 'base';
+@mixin bdradius($r) { border-radius: $r; }
+
+.login
+{
+    width: 50%;
+    height: 70%;
+    @include bdradius(20px);
+    background: #C9D1DE;
+}
+
+form
+{
+    width: 70%;
+    button
+    {
+        padding: 0.5em;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5rem;
+        @include bdradius(12px);
+        background: #0C1D39;
+    }
+}
+
+.input
+{
+    margin: 2em 0;
+    label { margin-bottom: 0.5em; }
+    input
+    {
+        padding: 1em;
+        outline: none;
+        background: none;
+        @include bdradius(12px);
+    }
+}
+
+@media screen and (max-width: 605px)
+{ .login { width: 70%; } }
+
+@media screen and (max-width: 360px)
+{ .login { width: 90%; } }

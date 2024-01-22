@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+body {
+  height: 100vh;
+}
+
+.login {
+  width: 50%;
+  height: 70%;
+  border-radius: 20px;
+  background: #C9D1DE;
+}
+
+form {
+  width: 70%;
+}
+form button {
+  padding: 0.5em;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  background: #0C1D39;
+}
+
+.input {
+  margin: 2em 0;
+}
+.input label {
+  margin-bottom: 0.5em;
+}
+.input input {
+  padding: 1em;
+  outline: none;
+  background: none;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 605px) {
+  .login {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .login {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
